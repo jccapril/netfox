@@ -277,20 +277,20 @@ extension NFX {
         if #available(iOS 13.0, *) {
             let appearence = UINavigationBarAppearance()
 
-//            appearence.configureWithOpaqueBackground()
+            appearence.configureWithOpaqueBackground()
             appearence.backgroundColor = UIColor.NFXStarkWhiteColor()
             appearence.titleTextAttributes = [.foregroundColor: UIColor.black]
 
             navigationController.navigationBar.standardAppearance = appearence
             navigationController.navigationBar.scrollEdgeAppearance = appearence
 
-//            if #available(iOS 15.0, *) {
-//                navigationController.navigationBar.compactScrollEdgeAppearance = appearence
-//            }
+            if #available(iOS 15.0, *) {
+                navigationController.navigationBar.compactScrollEdgeAppearance = appearence
+            }
 
             navigationController.presentationController?.delegate = self
         }
-        navigationController.modalPresentationStyle = .fullScreen
+   
         rootViewController?.present(navigationController, animated: true, completion: nil)
         navigationViewController = navigationController
     }
