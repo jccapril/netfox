@@ -267,6 +267,8 @@ extension NFX {
     }
     
     fileprivate func showNFX(on rootViewController: UIViewController?) {
+        let vc = NFXListController_iOS()
+        vc.modalPresentationStyle = .fullScreen
         let navigationController = UINavigationController(rootViewController: NFXListController_iOS())
         
         navigationController.navigationBar.isTranslucent = false
