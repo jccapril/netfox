@@ -205,7 +205,7 @@ extension URLResponse {
 extension NFXImage {
     class func NFXSettings() -> NFXImage {
         #if os (iOS)
-        return UIImage(data: NFXAssets.getImage(NFXAssetName.settings), scale: 3)!
+        return UIImage(data: NFXAssets.getImage(NFXAssetName.settings), scale: 1.7)!
         #elseif os(OSX)
         return NSImage(data: NFXAssets.getImage(NFXAssetName.settings))!
         #endif
@@ -213,7 +213,7 @@ extension NFXImage {
 
     class func NFXClose() -> NFXImage {
         #if os (iOS)
-        return UIImage(data: NFXAssets.getImage(NFXAssetName.close), scale: 3)!
+        return UIImage(data: NFXAssets.getImage(NFXAssetName.close), scale: 1.7)!
         #elseif os(OSX)
         return NSImage(data: NFXAssets.getImage(NFXAssetName.close))!
         #endif
@@ -221,7 +221,7 @@ extension NFXImage {
     
     class func NFXInfo() -> NFXImage {
         #if os (iOS)
-        return UIImage(data: NFXAssets.getImage(NFXAssetName.info), scale: 3)!
+        return UIImage(data: NFXAssets.getImage(NFXAssetName.info), scale: 1.7)!
         #elseif os(OSX)
         return NSImage(data: NFXAssets.getImage(NFXAssetName.info))!
         #endif
