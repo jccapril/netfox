@@ -290,6 +290,7 @@ extension NFX {
 
             navigationController.presentationController?.delegate = self
         }
+        navigationController.modalPresentationStyle = .fullScreen
         rootViewController?.present(navigationController, animated: true, completion: nil)
         navigationViewController = navigationController
     }
