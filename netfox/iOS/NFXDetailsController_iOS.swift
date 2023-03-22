@@ -60,9 +60,7 @@ class NFXDetailsController_iOS: NFXDetailsController, MFMailComposeViewControlle
         view.layer.masksToBounds = true
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(NFXDetailsController_iOS.actionButtonPressed(_:)))
-        let backItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-    
-        navigationItem.backBarButtonItem = backItem;
+ 
         // Header buttons
         infoButton = createHeaderButton("Info", x: 0, selector: #selector(NFXDetailsController_iOS.infoButtonPressed))
         requestButton = createHeaderButton("Request", x: infoButton.frame.maxX, selector: #selector(NFXDetailsController_iOS.requestButtonPressed))
