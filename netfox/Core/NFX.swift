@@ -267,9 +267,7 @@ extension NFX {
     }
     
     fileprivate func showNFX(on rootViewController: UIViewController?) {
-        let vc = NFXListController_iOS()
-        vc.modalPresentationStyle = .fullScreen
-        let navigationController = UINavigationController(rootViewController: vc)
+        let navigationController = UINavigationController(rootViewController: NFXListController_iOS())
         
         navigationController.navigationBar.isTranslucent = false
         navigationController.navigationBar.tintColor = UIColor.NFXOrangeColor()
@@ -292,7 +290,7 @@ extension NFX {
             
             navigationController.presentationController?.delegate = self
         }
-        navigationController.modalPresentationStyle = .fullScreen
+        navigationController.modalPresentationStyle = .overFullScreen
         rootViewController?.present(navigationController, animated: true, completion: nil)
         navigationViewController = navigationController
     }
