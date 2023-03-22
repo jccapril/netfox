@@ -13,6 +13,7 @@ import UIKit
 
 class NFXListController_iOS: NFXListController, UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating, UISearchControllerDelegate, DataCleaner {
     
+    
     // MARK: Properties
     
     var tableView = UITableView(frame: .zero, style: .grouped)
